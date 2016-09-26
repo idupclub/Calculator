@@ -15,9 +15,10 @@ func add(op1: Double, op2: Double) -> Double{
 class Calculator: NSObject {
     
     enum Operation {
-        case UnaryOp
+        case UnaryOp((Double) ->Double)
         case BinaryOp((Double, Double) -> Double)
         case EqualsOp
+        case Constant(Double)
     }
     
     var operations  = [
@@ -34,29 +35,38 @@ class Calculator: NSObject {
         
         "÷": Operation.BinaryOp({ $0 / $1 }),
         
-        "=": Operation.EqualsOp
+        "=": Operation.EqualsOp,
+        
+        "C": Operation.UnaryOp({_ in return 0}),
+        
+        "±": Operation.UnaryOp({ -$0}),
+        
+        "√": Operation.UnaryOp({sqrt($0)}),
+        
+        "π": Operation.Constant(M_PI)
+        
     ]
     
     
-    func performOperation(operation: String, operand: Double){
+    func performOperation(operation: String, operand: Double)  -> Double? {
         
         if let op = operations[operation]{
             switch  op {
             case .BinaryOp(let function):
                 pendingOp = Intermediate(firstOp: operand, waitingOperation: function)
-                result = operand
-            case .UnaryOp:
-                break
+                return nil
+            case .UnaryOp(let function):
+                return function(operand)
             case .EqualsOp:
                 if let theOperation =  pendingOp{
-                    result = theOperation.waitingOperation(theOperation.firstOp, operand)
+                     return theOperation.waitingOperation(theOperation.firstOp, operand)
                 }
-                
+            case .Constant(let value):
+                return value
             }
         }
+        return nil
     }
-    
-    var result = 0.0
     
     var pendingOp: Intermediate? = nil
     

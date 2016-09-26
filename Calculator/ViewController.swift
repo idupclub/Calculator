@@ -54,8 +54,9 @@ class ViewController: UIViewController {
         if let op = sender.currentTitle {
             
             
-            calculator.performOperation(operation: op, operand: Double(digitOnDisplay)!)
-            digitOnDisplay = String(calculator.result)
+            if let result = calculator.performOperation(operation: op, operand: Double(digitOnDisplay)!){
+                digitOnDisplay = String(result)
+            }
             
             inTypingMiddle = false
         }
