@@ -8,10 +8,6 @@
 
 import Foundation
 
-func add(op1: Double, op2: Double) -> Double{
-    return op1+op2
-}
-
 class Calculator: NSObject {
     
     enum Operation {
