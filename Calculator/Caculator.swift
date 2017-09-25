@@ -39,7 +39,7 @@ class Calculator: NSObject {
         
         "√": Operation.UnaryOp({sqrt($0)}),
         
-        "π": Operation.Constant(M_PI)
+        "π": Operation.Constant(Double.pi)
         
     ]
     
