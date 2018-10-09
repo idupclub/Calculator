@@ -55,7 +55,7 @@ class Calculator: NSObject {
                 return function(operand)
             case .EqualsOp:
                 if let theOperation =  pendingOp{
-                     return theOperation.waitingOperation(theOperation.firstOp, operand)
+                    return theOperation.waitingOperation(theOperation.firstOp, operand)
                 }
             case .Constant(let value):
                 return value

@@ -11,9 +11,9 @@
 		340920B31D98A7FE005BD9B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340920B21D98A7FE005BD9B7 /* ViewController.swift */; };
 		340920B61D98A7FE005BD9B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340920B41D98A7FE005BD9B7 /* Main.storyboard */; };
 		340920B81D98A7FE005BD9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340920B71D98A7FE005BD9B7 /* Assets.xcassets */; };
-		340920BB1D98A7FE005BD9B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340920B91D98A7FE005BD9B7 /* LaunchScreen.storyboard */; };
 		340920C41D98BB95005BD9B7 /* Caculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340920C31D98BB95005BD9B7 /* Caculator.swift */; };
 		340921001D98EB78005BD9B7 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340920FF1D98EB78005BD9B7 /* CalculatorUITests.swift */; };
+		3450F479216C649F00522C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3450F478216C649F00522C37 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +32,13 @@
 		340920B21D98A7FE005BD9B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		340920B51D98A7FE005BD9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		340920B71D98A7FE005BD9B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		340920BA1D98A7FE005BD9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		340920BC1D98A7FE005BD9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		340920C31D98BB95005BD9B7 /* Caculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caculator.swift; sourceTree = "<group>"; };
 		340920F71D98E5B1005BD9B7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		340920FD1D98EB78005BD9B7 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		340920FF1D98EB78005BD9B7 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		340921011D98EB78005BD9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3450F478216C649F00522C37 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 			children = (
 				340920B01D98A7FE005BD9B7 /* AppDelegate.swift */,
 				340920B71D98A7FE005BD9B7 /* Assets.xcassets */,
-				340920B91D98A7FE005BD9B7 /* LaunchScreen.storyboard */,
 				340920BC1D98A7FE005BD9B7 /* Info.plist */,
+				3450F478216C649F00522C37 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340920BB1D98A7FE005BD9B7 /* LaunchScreen.storyboard in Resources */,
+				3450F479216C649F00522C37 /* LaunchScreen.storyboard in Resources */,
 				340920B81D98A7FE005BD9B7 /* Assets.xcassets in Resources */,
 				340920B61D98A7FE005BD9B7 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +253,6 @@
 				340920B51D98A7FE005BD9B7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		340920B91D98A7FE005BD9B7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				340920BA1D98A7FE005BD9B7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
